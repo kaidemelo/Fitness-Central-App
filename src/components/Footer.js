@@ -71,42 +71,42 @@ function Footer() {
           <small class='website-rights'>FITNESS CENTRAL © 2020</small>
           <div class='social-icons'>
             <Link
-              class='social-icon-link facebook'
-              to='/'
+              class='social-icon-link googlestore'
+              to={{ pathname: "https://play.google.com/store/apps/" }}
               target='_blank'
-              aria-label='Facebook'
+              aria-label='Google Play Store'
             >
               <i class='fab fa-google-play' />
             </Link>
             <Link
-              class='social-icon-link instagram'
-              to='/'
+              class='social-icon-link appstore'
+              to={{ pathname: "https://apps.apple.com/" }}
               target='_blank'
-              aria-label='Instagram'
+              aria-label='App Store'
             >
               <i class='fab fa-app-store-ios' />
             </Link>
             <Link
-              class='social-icon-link youtube'
-              to='/'
+              class='social-icon-link coursepage'
+              to={{ pathname: "https://www.gold.ac.uk/ug/bsc-computer-science/" }}
               target='_blank'
-              aria-label='Youtube'
+              aria-label='Degree Course Page'
             >
               <i class='fas fa-graduation-cap' />
             </Link>
             <Link
-              class='social-icon-link twitter'
-              to='/'
+              class='social-icon-link goldsmiths'
+              to={{ pathname: "https://www.gold.ac.uk/" }}
               target='_blank'
-              aria-label='Twitter'
+              aria-label='GoldSmiths Univeristy'
             >
               <i class='fas fa-university' />
             </Link>
             <Link
-              class='social-icon-link twitter'
-              to='/'
+              class='social-icon-link github'
+              to={{ pathname: "https://github.com/kaidemelo/Fitness-Central-App" }}
               target='_blank'
-              aria-label='LinkedIn'
+              aria-label='GitHub Repo'
             >
               <i class='fab fa-github' />
             </Link>
