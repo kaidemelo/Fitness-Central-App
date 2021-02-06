@@ -8,7 +8,7 @@
 .home,
 .services,
 .pricing,
-.sign-up {
+.login {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -35,7 +35,7 @@
   height: 25vh;
 }
 
-.sign-up {
+.login {
   background-image: url('/images/img-8.jpg');
   background-position: center;
   background-size: cover;
