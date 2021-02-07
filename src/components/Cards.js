@@ -10,36 +10,36 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Adventure'
-              path='/services'
+              src='images/img-14.jpg'
+              text='"Helped me to change my life around"'
+              label='John, 32'
+              path='/pricing'
             />
             <CardItem
-              src='images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
-              path='/services'
+              src='images/img-15.jpg'
+              text='"I cannot believe my results!"'
+              label='Sarah, 27'
+              path='/pricing'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
-              path='/services'
-            />
-            <CardItem
-              src='images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
+              src='images/img-16.jpg'
+              text='"I got wham in a matter of months"'
+              label='Gary, 37'
               path='/pricing'
             />
             <CardItem
-              src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
-              path='/login'
+              src='images/img-17.jpg'
+              text='"I finally achieved my long term fitness goals"'
+              label='Fred, 36'
+              path='/pricing'
+            />
+            <CardItem
+              src='images/img-18.jpg'
+              text='"I am in disbelief. It almost seems too good to be true"'
+              label='Mary, 25'
+              path='/pricing'
             />
           </ul>
         </div>
