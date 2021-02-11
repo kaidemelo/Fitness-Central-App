@@ -1,13 +1,13 @@
 import React from 'react';
 import HeroSection from '../../HeroSection/HeroSection';
-import { signupObjOne, signupObjTwo, signupObjThree, signupObjFour } from './Data';
+import { signupObjOne } from './Data';
+import Form from '../../SignUpComponent/Form';
 
 function SignUp() {
   return (
     <>
       <HeroSection {...signupObjOne} />
-  
-      <HeroSection {...signupObjThree} />
+      <Form />
     </>
   );
 }
