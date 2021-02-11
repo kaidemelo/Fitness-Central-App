@@ -11,9 +11,9 @@ export const teamObjOne = {
   description3:
     'Tevye Matheson,',
   description4:
-    'Mohammed Razzak,',
+    'Momit Choudhury,',
   description5:
-    'Momit Choudhury.',
+    'Mohammed Razzak.',
   buttonEnabled: false,
   buttonLabel: '',
   buttonLink: '',
