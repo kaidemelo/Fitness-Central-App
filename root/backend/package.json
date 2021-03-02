@@ -2,7 +2,7 @@
   "name": "mybackend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node Main"
@@ -10,9 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-openid-connect": "^2.2.1"
+    "express-openid-connect": "^2.2.1",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
