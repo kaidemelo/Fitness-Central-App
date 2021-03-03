@@ -18,6 +18,7 @@ const db = mysql.createConnection({
   database: 'fitnesscentral'
 });
 
+//Display mysql db status
 db.connect(function (err) {
   if (err) {
       console.log('Error connecting to Database',err);
@@ -26,8 +27,8 @@ db.connect(function (err) {
   console.log('Connection established');
 });
 
+//Post request for users registering (adds credentials to mysql db)
 app.post("/registered", (req, res) => {
-  
   const username = req.body.username;
   const email = req.body.email;
   const password = req.body.password;
@@ -42,25 +43,24 @@ app.post("/registered", (req, res) => {
 });
 
 app.post("/login", (req, res) => {
-  
   const username = req.body.username;
-  const email = req.body.email;
   const password = req.body.password;
 
   db.query(
-    "SELECT * FROM fitnesscentral.users WHERE username = ? OR email = ? AND password = ?",
-    [username, email, password],
+    "SELECT * FROM fitnesscentral.users WHERE username = ? AND password = ?",
+    [username, password],
     (err, result) => {
       if (err) {
         //If error return error
-        res.send({err: err})
+        console.log(err);
       }
-
-      if (result > 0) {
+      if (result.length > 0) {
         //If result send user
+        console.log(result);
         res.send(result);
       } else {
-        //If error return this message to user
+        //If user credentials don't exist return this message
+        console.log({ message: "Incorrect Username/Password combination!" });
         res.send({ message: "Incorrect username/password combination" });
       }
     }
@@ -71,8 +71,6 @@ app.post("/login", (req, res) => {
 app.listen(3001, () => {
   console.log("Server running");
 });
-
-
 
 // //Post req to insert users details into db
 // app.post("/registered", (req, res) => {
